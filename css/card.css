@@ -1,0 +1,26 @@
+hr.zig,
+hr.zag {
+    border: none;
+    height: 30px;
+    margin: 0 50px;
+}
+
+hr.zig {
+    background: linear-gradient(-135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 40px;
+    z-index: 100;
+    position: relative;
+}
+
+hr.zag {
+    background: linear-gradient(-135deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 40px;
+    z-index: 50;
+    margin-top: -28px;
+}
