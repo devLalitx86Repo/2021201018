@@ -348,6 +348,10 @@ body:not(.user-is-tabbing) a:focus {
   background: var(--pink);
 }
 
+.nav_active {
+  color: brown;
+}
+
 .header {
   height: 100vh;
   /* background-size: cover; */

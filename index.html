@@ -12,7 +12,6 @@
     <meta name="keywords" content="Name, About, Education,Work" />
 
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/card.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -21,21 +20,25 @@
         <nav class="nav" role="navigation">
             <ul class="nav__items">
 
-                <li class="nav__item">
-                    <a title="Home" onclick="toggle_edu(0)" href="#" class=" nav__link "><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+                <li id="link_home" class="nav__item">
+                    <a title="Home" onclick="toggle_edu(0)" href="#" class=" nav__link"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
                 </li>
-                <li class="nav__item">
-                    <a title="Education" onclick="toggle_edu(1)" href="#" class=" nav__link "><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a>
+                
+                <li id="link_education" class="nav__item">
+                    <a  title="Education" onclick="toggle_edu(1)" href="#" class=" nav__link "><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a>
                 </li>
-                <li class="nav__item ">
-                    <a title="Work" onclick="toggle_edu(2)" href="# " class="nav__link "><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i></a>
+
+                <li id="link_work" class="nav__item ">
+                    <a  title="Work" onclick="toggle_edu(2)" href="# " class="nav__link "><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i></a>
                 </li>
                 </li>
-                <li class="nav__item ">
-                    <a title="Projects" onclick="toggle_edu(3)" href="# " class="nav__link "><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+
+                <li id="link_project" class="nav__item ">
+                    <a  title="Projects" onclick="toggle_edu(3)" href="# " class="nav__link "><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </li>
-                <li class="nav__item">
-                    <a title="About Me" onclick="toggle_edu(4)" href="#" class=" nav__link "><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+                
+                <li id="link_about" class="nav__item">
+                    <a  title="About Me" onclick="toggle_edu(4)" href="#" class=" nav__link "><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </nav>
@@ -379,7 +382,7 @@
 
                     <div class="about__photo-container ">
                         <!-- Add a nice photo of yourself -->
-                        <img class="about__photo " src="./img/finalProfile.png " alt=" " />
+                        <img class="about__photo " src="https://i.imgur.com/VQA7sxG.png" alt=" " />
                     </div>
                 </div>
             </div>
