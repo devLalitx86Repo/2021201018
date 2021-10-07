@@ -53,3 +53,24 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+
+function updateClock() {
+  var now = new Date();
+  var sec = ('0' + now.getSeconds()).slice(-2),
+    min = ('0' + now.getMinutes()).slice(-2),
+    hou = ('0' + now.getHours()).slice(-2),
+    mo = now.getMonth(),
+    dy = now.getDate(),
+    yr = now.getFullYear();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var tags = ["mon", "d", "y", "h", "m", "s"],
+    corr = [months[mo], dy, yr, hou, min, sec];
+  for (var i = 0; i < tags.length; i++)
+    document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+}
+
+function initClock() {
+  updateClock();
+  window.setInterval("updateClock()", 1);
+}

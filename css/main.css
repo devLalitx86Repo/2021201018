@@ -573,3 +573,16 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 var(--gutter-huge) 0 0;
   }
 }
+
+#timedate {
+  /* font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
+    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; */
+  width: 35%;
+  /* margin: 40px auto; */
+  /* margin-left: 40px; */
+  margin-left: auto;
+  margin-right: 0;
+  color: #2d2d2d;
+  border-right: 3px solid #ed1f24;
+  /* padding: 20px; */
+}
